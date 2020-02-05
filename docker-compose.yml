@@ -1,0 +1,8 @@
+version: '3'
+services:
+  soundsync:
+    build: .
+    restart: "no"
+    volumes:
+      - "./images:/output"
+    entrypoint: cp -r /build/buildroot/output/images /output
