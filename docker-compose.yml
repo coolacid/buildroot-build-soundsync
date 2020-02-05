@@ -5,4 +5,4 @@ services:
     restart: "no"
     volumes:
       - "./images:/output"
-    entrypoint: cp -r /build/buildroot/output/images /output
+    command: cp -r /build/buildroot/output/images /output
